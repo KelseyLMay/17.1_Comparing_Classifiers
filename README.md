@@ -28,15 +28,6 @@ The second L1 logistic regression model was 87.9% accurate, and indicated that c
 
 Although none of my models achieved my target 90% accuracy, they all hovered around 88-89%. The SVC model had the highest accuracy but was done on a subset of the data because of its high computational requirements. The Decision Tree Classifier was the fastest and maintained accuracy so that model would be the most helpful out of the ones here. It is possible that additional analysis and exploring additional hyperparameter values would further improve results, although cross validation was used to optimize the current hyperparameters.
 
-
-
-
-
-n for example), to try to address some of the variation, but there is definitely room to improve this as well.
-4) Converted data as necessary for clarity and analysis. I used the year to calculate the car's age for further analysis vs relying on the year.
-5) Created plots to better understand the core relationships. Scatterplots and box plots indicated that there is a relationship between the price of a car and its age, mileage, condition, and fuel type. However, it also appears like the data is still pretty noisy. See 
-[Price by Age](https://github.com/KelseyLMay/Module-11-Price-of-a-Car/blob/main/plots/Price_by_Age.png), [Price by Condition](https://github.com/KelseyLMay/Module-11-Price-of-a-Car/blob/main/plots/Price_by_Condition.png), [Price by Fuel Type](https://github.com/KelseyLMay/Module-11-Price-of-a-Car/blob/main/plots/Price_by_Fuel_Type.png), [Price by Mileage](https://github.com/KelseyLMay/Module-11-Price-of-a-Car/blob/main/plots/Price_by_Mileage.png), [Price by Odometer Reading](https://github.com/KelseyLMay/Module-11-Price-of-a-Car/blob/main/plots/Price_by_Odometer_Reading.png), and [Price of Car by Year](https://github.com/KelseyLMay/Module-11-Price-of-a-Car/blob/main/plots/Price_of_Car_by_Year.png)
-
 ## Process ##
 The dataset was split into training and testing data, and models were built using Lasso and Ridge regression. The Lasso regression did not converge, suggesting the outcome might not be accurate. However, it did suggest that the higher priced cars were newer (younger than 2010), had less mileage (less than 100k miles), and a diesel fuel type. The lower priced cars were older (older than 2010), had higher mileage (over 150k miles), and in poor condition. 
 
@@ -44,3 +35,5 @@ Ridge regression estimates coefficients of multiple-regression models when varia
 
 ## Conclusion ##
 My analysis indicates that newer cars (younger than 2010), cars with diesel fuel, or lower mileage (less than 100k miles) cars have the highest prices. In contrast, older cars (older than 2010), cars with higher mileage (more than 150k miles), or cars in poor condition have the lowest prices. I created a model that can be used to roughly predict the price of used cars based on certain criteria. However, the size of the mean squared error indicates that the data needs more cleaning or more data should be analyzed to create a model that can make more accurate predictions.
+
+NOTE: All of the graphs mentioned above can be found in the [graphs directory](https://github.com/KelseyLMay/17.1_Comparing_Classifiers/blob/main/graphs)
