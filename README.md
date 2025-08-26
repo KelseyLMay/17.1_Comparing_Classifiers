@@ -28,11 +28,6 @@ The second L1 logistic regression model was 87.9% accurate, and indicated that c
 
 Although none of my models achieved my target 90% accuracy, they all hovered around 88-89%. The SVC model had the highest accuracy but was done on a subset of the data because of its high computational requirements. The Decision Tree Classifier was the fastest and maintained accuracy so that model would be the most helpful out of the ones here. It is possible that additional analysis and exploring additional hyperparameter values would further improve results, although cross validation was used to optimize the current hyperparameters.
 
-## Process ##
-The dataset was split into training and testing data, and models were built using Lasso and Ridge regression. The Lasso regression did not converge, suggesting the outcome might not be accurate. However, it did suggest that the higher priced cars were newer (younger than 2010), had less mileage (less than 100k miles), and a diesel fuel type. The lower priced cars were older (older than 2010), had higher mileage (over 150k miles), and in poor condition. 
-
-Ridge regression estimates coefficients of multiple-regression models when variables are highly correlated (potentially factors like mileage and car age, for example). I did a grid search to find the best alpha for Ridge Regression and it was 100.
-
 ## Conclusion ##
 My analysis indicates that newer cars (younger than 2010), cars with diesel fuel, or lower mileage (less than 100k miles) cars have the highest prices. In contrast, older cars (older than 2010), cars with higher mileage (more than 150k miles), or cars in poor condition have the lowest prices. I created a model that can be used to roughly predict the price of used cars based on certain criteria. However, the size of the mean squared error indicates that the data needs more cleaning or more data should be analyzed to create a model that can make more accurate predictions.
 
